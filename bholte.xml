@@ -2,16 +2,20 @@
 <manifest>
 
 <remote  name="dino"
-           fetch="https://github.com/dinosnore1"
+           fetch="ssh://git@github.com/dinosnore1"
            revision="queso" />
            
 <remote  name="los"
            fetch="https://github.com/LineageOS"
            revision="refs/heads/lineage-17.1" />
-           
+
+<remote  name="lab"
+           fetch="https://gitlab.com/dinosnore1"
+           revision="queso" />
+
   <project path="device/xiaomi/beryllium" name="device_xiaomi_beryllium" remote="dino" />
   <project path="device/xiaomi/sdm845-common" name="device_xiaomi_sdm845-common" remote="dino" />
   <project path="kernel/xiaomi/sdm845" name="kernel_xiaomi_sdm845" remote="dino" />
   <project path="vendor/xiaomi" name="vendor_xiaomi" remote="dino" />
-  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="los" />
+
 </manifest>
